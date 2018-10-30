@@ -28,10 +28,10 @@ function leftParen() {
     " * (" : "(" ;
 }
 
-function multOrDiv(edward) {
+function multOrDiv(number) {
     var x = document.getElementById("result") ;
     var y = document.getElementById("myPara") ;
-    if (edward == "mult") {
+    if (number == "mult") {
         x.value += "\u00D7" ;
         y.innerHTML += "*" ;
     } else {
@@ -68,15 +68,6 @@ function ac() {
     var x = document.getElementById("result") ;
     var y = document.getElementById("myPara") ;
     x.value = y.innerHTML = "" ;
-}
-
-function ans() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
-    var z = document.getElementById("myAns") ;
-    x.value += "Ans" ;
-    y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ?
-    " * " + z.innerHTML : z.innerHTML ;
 }
 
 function equal() {

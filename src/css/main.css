@@ -17,7 +17,7 @@ body {
 }
 
 table {
-  border: 3px solid black;
+  border: 10px solid springgreen;
 }
 
 p {
@@ -26,12 +26,12 @@ p {
 
 td {
   width: 19vw;
-  height: 13.8vh;
+  height: 11.8vh;
   text-align: center;
   font-size: 35px;
   font-weight: bold;
   color: black;
-  border: 1px solid white;
+  border: 5px solid white;
 }
 
 td:hover {
