@@ -20,7 +20,7 @@ h1 {
   color: white;
 }
 
-body {margin: 0; background-color: #EFDB2F; text-align: center}
+body {margin: 0; background-color: lightblue; text-align: center}
 p {font-size: 0px}
 td {width: 19vw; height: 13.8vh; text-align: center; font-size: 25px; font-weight: bold; color: black; border: 1px solid white}
 td:hover {background-color: #CDBA1E}
