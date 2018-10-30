@@ -5,10 +5,10 @@ function input(sun) {
     y.innerHTML += sun ;
 }
 
-function factorial(shirious) {
-    if (Number.isInteger(shirious)) {
-        if (shirious < 2) return 1 ;
-        return shirious * factorial(shirious - 1) ;
+function factorial(num) {
+    if (Number.isInteger(num)) {
+        if (num < 2) return 1 ;
+        return num * factorial(num - 1) ;
     }
 }
 
@@ -52,46 +52,15 @@ function del() {
         ac() ;
     } else {
         switch (y.innerHTML.slice(-2)) {
-            case "* ": // sin cos tan
-            y.innerHTML = (/[\d)IE]/.test(x.value.slice(-5, -4))) ?
-            y.innerHTML.slice(0, -28) : y.innerHTML.slice(0, -25) ;
-            x.value = x.value.slice(0, -4) ;
-            break ;
-            case "n(":
-            case "s(": // asin acos atan
-            y.innerHTML = (/[\d)IE]/.test(x.value.slice(-7, -6))) ?
-            y.innerHTML.slice(0, -29) : y.innerHTML.slice(0, -26) ;
-            x.value = x.value.slice(0, -6) ;
-            break ;
-            case "0(": // log
-            y.innerHTML = (/[\d)IE]/.test(x.value.slice(-5, -4))) ?
-            y.innerHTML.slice(0, -14) : y.innerHTML.slice(0, -11) ;
-            x.value = x.value.slice(0, -4) ;
-            break ;
-            case "g(": // ln
-            y.innerHTML = (/[\d)IE]/.test(x.value.slice(-4, -3))) ?
-            y.innerHTML.slice(0, -12) : y.innerHTML.slice(0, -9) ;
-            x.value = x.value.slice(0, -3) ;
-            break ;
             case "t(": // sqrt
             y.innerHTML = (/[\d)IE]/.test(x.value.slice(-6, -5))) ?
             y.innerHTML.slice(0, -13) : y.innerHTML.slice(0, -10) ;
             x.value = x.value.slice(0, -5) ;
             break ;
-            case "PI": // pi
-            y.innerHTML = (/[\d)IE]/.test(x.value.slice(-2, -1))) ?
-            y.innerHTML.slice(0, -10) : y.innerHTML.slice(0, -7) ;
-            x.value = x.value.slice(0, -1) ;
-            break ;
-            case ".E": // e
-            y.innerHTML = (/[\d)IE]/.test(x.value.slice(-2, -1))) ?
-            y.innerHTML.slice(0, -9) : y.innerHTML.slice(0, -6) ;
-            x.value = x.value.slice(0, -1) ;
-            break ;
             default:
             y.innerHTML = y.innerHTML.slice(0, -1) ;
             x.value = x.value.slice(0, -1) ;
-        } ;
+        }
     }
 }
 
