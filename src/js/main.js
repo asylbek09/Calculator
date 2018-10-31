@@ -1,8 +1,8 @@
-function input(sun) {
+function input(sign) {
     var x = document.getElementById("result") ;
     var y = document.getElementById("myPara") ;
-    x.value += sun ;
-    y.innerHTML += sun ;
+    x.value += sign ;
+    y.innerHTML += sign ;
 }
 
 function factorial(num) {
